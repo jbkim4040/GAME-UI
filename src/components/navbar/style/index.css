@@ -1,0 +1,140 @@
+.navbar_container{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    height: 94px;
+    width: 98%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.logo_container{
+    height: 70%;
+}
+.logo_container img{
+    height: 100%;
+}
+.menu_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu_section li{
+   padding: 15px 15px;
+   line-height: 20px;
+   font-size: 20px;
+}
+.menu_section li:hover{
+    font-weight: 500;
+    padding: 12px 15px;
+    color: #ff0066;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #121FCF;
+ }
+
+ .icons_container{
+    line-height: 20px;
+}
+
+.icons_container span{
+    line-height: 30px;
+    font-size: 30px;
+    padding: 0 8px;
+}
+.icons_container span:hover{
+    color: #ff0066;
+    cursor: pointer;
+}
+
+.navbar_container_mobile{
+    background-color: black;
+    color: white;
+    padding: 0 4%;
+    display: none;
+}
+/* ========================================== */
+li a, li a:hover, li a:focus, li a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar_container{
+        display: none;
+    }
+
+
+/* mobile view */
+.navbar_container_mobile{
+    padding: 5px 15px;
+    display: block;
+    position: relative;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    height: 60px;
+    flex: 1;
+}
+.logo_container_mobile{
+    height: 60%;
+    flex: 0.7  ;
+}
+
+.logo_container_mobile img{
+    height: 100%;
+}
+
+.icons_container_mobile{
+    line-height: 20px;
+}
+
+.icons_container_mobile span{
+    line-height: 25px;
+    font-size: 25px;
+    padding: 5px 5px;
+}
+.navbar_btn_mobile{
+    color: white;
+    background-color: transparent;
+    border: none;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.menu_section_mobile{
+    list-style-type: none;
+    padding-left: 0px;
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    width: 100%;
+    margin-left: -15px;
+}
+.menu_section_mobile li{
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    font-size: 15px;
+    padding: 20px 15px;
+    border-bottom: 1px solid white;
+}
+
+.menu_section_mobile li:last-child{
+ 
+    border-bottom: none;
+}
+
+
+}

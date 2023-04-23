@@ -1,0 +1,115 @@
+.cover_container{
+    background-image: url('../../../assets/images/background.png');
+    background-size: cover;
+    height: 670px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.image_wrapper{
+    width: 47%;
+    aspect-ratio: auto 650 / 650;
+}
+.image_wrapper img{
+    width: 109%;
+    margin-left: -10px;
+}
+.cover_content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    max-width: 1110px;
+    /* height: 100%; */
+    bottom:50px;
+}
+.main_heading{
+    text-align: left;
+    font-size: 61px;
+    line-height: 61px;
+    color: #f8f8f8;
+    /* margin-bottom: 15px;   */
+    /* mix-blend-mode: color-dodge; */
+    padding: 0 !important;
+}
+
+.cover_container button{
+    margin-bottom: 25px;
+}
+.arrow{
+    color: #f8f8f8;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    z-index: 2 ;
+}
+.arrow:hover {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+span a, span a:hover, span a:focus, span     a:active {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(10px); }
+}
+
+
+@media screen and (max-width: 768px) {
+
+.cover_container{
+    background-size: cover;
+    height: 370px;
+    margin-bottom: 40px;
+}
+    
+.image_wrapper{
+    width: 270px;
+    margin:  0 auto;
+    margin-bottom: -75px;
+    aspect-ratio: auto 650 / 650;
+    text-align: center;
+
+}
+.image_wrapper img{
+    width: 100%;
+    margin-left: 0px;
+
+}
+.cover_content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    /* height: 100%; */
+    bottom:50px;
+}
+.main_heading{
+    font-size: 30px;
+    line-height: 30px;
+    mix-blend-mode: normal;
+    text-align: center;
+
+}
+
+.arrow{
+    font-size: 50px;
+    line-height: 50px;
+}
+}
